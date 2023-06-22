@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Advice generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "light-cyan": "hsl(193, 38%, 86%)",
+            "neon-green": "hsl(150, 100%, 66%)",
+            "grayish-blue": "hsl(217, 19%, 38%)",
+            "dark-grayish": "hsl(217, 19%, 24%)",
+            "dark-blue": "hsl(218, 23%, 16%)"
+          },
+          fontSize: {
+            base: '28px'
+          },
+          fontFamily: {
+            sans: 'Manrope'
+          },
+          screens: {
+            desktop: '1440px'
+          },
+          letterSpacing: {
+            spaced: '3px'
+          },
+          boxShadow: {
+            button: '0 0 20px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="w-screen h-screen bg-dark-blue flex items-center justify-center px-4">
+
+  <main class="bg-dark-grayish p-8 rounded-xl relative flex flex-col py-12 items-center justify-center gap-4">
+    <strong class="uppercase tracking-spaced text-neon-green text-[16px]">Advice #117</strong>
+
+    <h1 class="text-light-cyan text-base text-center max-w-[400px]">""</h1>
+
+    <div class="my-6">
+      <img src="./images/pattern-divider-mobile.svg" alt="" class="desktop:hidden">
+      <img src="./images/pattern-divider-desktop.svg" alt="" class="hidden desktop:block">
+    </div>
+
+    <button id="gen-advice" class="bg-neon-green p-5 rounded-full w-fit absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 cursor-pointer group z-10 hover:shadow-button hover:shadow-neon-green transition-shadow">
+      <img src="./images/icon-dice.svg" alt="" class="">
+    </div>
+  </main>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
