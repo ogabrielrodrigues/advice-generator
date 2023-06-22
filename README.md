@@ -12,3 +12,5 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 - Website - [Gabriel Rodrigues](https://ogabrielrodrigues.vercel.app/)
 - Frontend Mentor - [@ogabrielrodrigues](https://www.frontendmentor.io/profile/ogabrielrodrigues)
+
+
